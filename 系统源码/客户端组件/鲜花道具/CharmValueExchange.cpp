@@ -145,7 +145,7 @@ void CCharmValueExchange::OnPaint()
 	DrawBorder(&dc);
 
 	//�滭ͼƬ
-	CQPPngImage PngImage;
+	CPngImage PngImage;
 	HINSTANCE hInstance = CPropertyBar::m_pPropertyBar->m_ReshInstance;
 	PngImage.LoadImage(hInstance,CPropertyBar::m_pPropertyBar->m_PropertyViewImage.pszExChagneArrowhead);
 	PngImage.DrawImage(&dc,168,46);
