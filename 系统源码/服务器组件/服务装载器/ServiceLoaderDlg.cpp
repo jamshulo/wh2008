@@ -472,7 +472,7 @@ const tagDBConnectInfo * CServiceLoaderDlg::GetDBConnectInfo(DWORD dwDataBaseAdd
 		//执行查询
 		ServerInfoAide.ResetParameter();
 		ServerInfoAide.AddParameter(TEXT("@strDataBaseAddr"),szDataBaseAdr);
-		LONG lReturnCode=ServerInfoAide.ExecuteProcess(TEXT("GSP_LoadDataBaseInfo"),true);
+		LONG lReturnCode=ServerInfoAide.ExecuteProcess(TEXT("GSP_GS_LoadDataBaseInfo"),true);
 
 		//结果判断
 		if (lReturnCode!=0L)

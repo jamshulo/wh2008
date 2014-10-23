@@ -505,7 +505,7 @@ void CServerListCenter::LoadGameType(CDataBaseAide & DataBaseAide)
 {
 	//执行命令
 	DataBaseAide.ResetParameter();
-	DataBaseAide.ExecuteProcess(TEXT("GSP_LoadGameTypeItem"),true);
+	DataBaseAide.ExecuteProcess(TEXT("GSP_GP_LoadGameTypeItem"),true);
 
 	//变量定义
 	tagGameType GameTypeRead;
@@ -540,7 +540,7 @@ void CServerListCenter::LoadGameKind(CDataBaseAide & DataBaseAide)
 {
 	//执行命令
 	DataBaseAide.ResetParameter();
-	DataBaseAide.ExecuteProcess(TEXT("GSP_LoadGameKindItem"),true);
+	DataBaseAide.ExecuteProcess(TEXT("GSP_GP_LoadGameKindItem"),true);
 
 	//变量定义
 	tagGameKind GameKindRead;
@@ -556,7 +556,7 @@ void CServerListCenter::LoadGameKind(CDataBaseAide & DataBaseAide)
 		GameKindRead.wTypeID=DataBaseAide.GetValue_WORD(TEXT("TypeID"));
 		GameKindRead.wKindID=DataBaseAide.GetValue_WORD(TEXT("KindID"));
 		GameKindRead.wSortID=DataBaseAide.GetValue_WORD(TEXT("SortID"));
-		GameKindRead.dwMaxVersion=DataBaseAide.GetValue_DWORD(TEXT("MaxVersion"));
+		//GameKindRead.dwMaxVersion=DataBaseAide.GetValue_DWORD(TEXT("MaxVersion"));
 		DataBaseAide.GetValue_String(TEXT("KindName"),GameKindRead.szKindName,CountArray(GameKindRead.szKindName));
 		DataBaseAide.GetValue_String(TEXT("ProcessName"),GameKindRead.szProcessName,CountArray(GameKindRead.szProcessName));
 
@@ -578,7 +578,7 @@ void CServerListCenter::LoadGameStation(CDataBaseAide & DataBaseAide)
 {
 	//执行命令
 	DataBaseAide.ResetParameter();
-	DataBaseAide.ExecuteProcess(TEXT("GSP_LoadGameNodeItem"),true);
+	DataBaseAide.ExecuteProcess(TEXT("GSP_GP_LoadGameNodeItem"),true);
 
 	//变量定义
 	tagGameStation GameStationRead;

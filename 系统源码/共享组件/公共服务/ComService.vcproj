@@ -4,6 +4,7 @@
 	Version="9.00"
 	Name="公共服务"
 	ProjectGUID="{48A17E45-3F15-4ACC-92DE-DA57DA6C360B}"
+	RootNamespace="公共服务"
 	Keyword="MFCDLLProj"
 	TargetFrameworkVersion="131072"
 	>
@@ -240,6 +241,10 @@
 				>
 			</File>
 			<File
+				RelativePath=".\WHEncrypt.cpp"
+				>
+			</File>
+			<File
 				RelativePath=".\WinFileInfo.cpp"
 				>
 			</File>
@@ -279,6 +284,10 @@
 			</File>
 			<File
 				RelativePath=".\WebBrowser.h"
+				>
+			</File>
+			<File
+				RelativePath=".\WHEncrypt.h"
 				>
 			</File>
 			<File

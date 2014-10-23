@@ -32,6 +32,7 @@
 
 //导出类头文件
 #include "Encrypt.h"
+#include "WHEncrypt.h"
 #include "DataQueue.h"
 #include "WebBrowser.h"
 #include "HtmlBrowser.h"
